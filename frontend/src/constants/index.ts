@@ -1,0 +1,102 @@
+import { SxProps } from "@mui/material";
+
+export const APP_TOKEN_KEY = "rakshAppToken";
+
+export const APP_NAME = "EarnVault";
+
+export const screenSize = {
+  mobile: "600px",
+  tablet: "900px",
+  pc: "1200px",
+};
+
+export const ROUTES = {
+  REGISTER: "/",
+  LOGIN: "/login",
+  LOGOUT: "/logout",
+  DASHBOARD: "/dashboard",
+  ADD_COMPANY: "/add-company",
+  EARNING_HISTORY: "/earning-history",
+  TAX_ANALYSIS: "/tax-analysis",
+  PF_DETAILS: "/pf-details",
+  WORK_EXPERIENCE: "/work-experience",
+  PROFILE: "/profile",
+};
+
+export const colors = {
+  white: "#ffffff",
+  contentTertiary: "#6B6B6B",
+  lightRed: "#F2D1CC",
+  black: "#2D3747",
+
+  // App Pallette
+  primary: "#4A90E2",
+  primaryBg: "#EAF4FF",
+  primaryBorder: "#BAE6FD",
+  blue: "#1C4ED8",
+  blueBg: "#DBEAFE",
+  yellow: "#FFB84D",
+  red: "#C03000",
+  appRed: "#FF6B6B",
+  redBg: "#FFF1F1",
+  green: "#67C27C",
+  greenHover: "#4CAF50",
+  greenBg: "#F1F8F1",
+  contentSecondary: "#5C6C89",
+  contentSecondaryBg: "#F5F7FA",
+  orange: "#FFB84D",
+  orange1: "#FFB84D",
+  lightOrange1: "#FBE7CE",
+  lightOrange2: "#FBE8CF",
+  orangeBg: "#FFF8EF",
+  orangeBg1: "#F9F3EB",
+  orangeBg1Border: "#FCD9B6",
+  grey1: "#9CA3AF",
+  grey1Bg: "#F3F4F6",
+  grey2: "#D1D5DB",
+  grey3: "#EEEEEE",
+  lightGrey1: "#F9FAFB",
+  lightGrey2: "#F6F6F6",
+  lightGrey3: "#E5E7EB",
+  lightGrey4: "#f5f5f5",
+  success: "#13A34A",
+  successBg: "#F1FDF4",
+  successBorder: "#BBF7D0",
+  warning: "#F59E0C",
+  warningBg: "#FFFBEB",
+  warningBorder: "#FDE68A",
+  danger: "#EF4444",
+  dangerBg: "#FEF2F2",
+  dangerBorder: "#FCA5A5",
+};
+
+export const ISO_DATE_FORMAT = "DD-MMM-YYYY";
+export const ISO_DATE_FORMAT2 = "YYYY-MM-DD";
+
+export const medicationColors = {
+  taken: {
+    bg: "#F1FDF4",
+    border: "#DCFCE7",
+    icon: "#13A34A",
+    text: "#13A34A",
+  },
+  missed: {
+    bg: "#FEF2F2",
+    border: "#FECACA",
+    icon: "#DC2627",
+    text: "#DC2627",
+  },
+};
+
+export const AccordionStyles: SxProps = {
+  border: "1px solid",
+  borderColor: "divider",
+  borderRadius: "8px !important",
+  overflow: "hidden",
+  "&::before": {
+    display: "none",
+  },
+};
+export const AccordionSummaryStyles = {
+  borderRadius: "8px !important",
+};
