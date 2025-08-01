@@ -51,6 +51,7 @@ const Button = ({
       data-testid={dataTestId}
       sx={{
         fontSize,
+        fontWeight: "600",
         borderRadius,
         textTransform: "none",
         p: endIcon

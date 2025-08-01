@@ -30,9 +30,11 @@ export const colors = {
   black: "#2D3747",
 
   // App Pallette
-  primary: "#4A90E2",
-  primaryBg: "#EAF4FF",
+  primary: "#4261EE",
+  primaryBg: "#EBEFFD",
   primaryBorder: "#BAE6FD",
+  skyBlue: "#4BC8F0",
+  skyBlueBg: "#EEF9FD",
   blue: "#1C4ED8",
   blueBg: "#DBEAFE",
   yellow: "#FFB84D",
