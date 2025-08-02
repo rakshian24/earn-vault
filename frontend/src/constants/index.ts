@@ -101,6 +101,9 @@ export const AccordionStyles: SxProps = {
     display: "none",
   },
 };
+
 export const AccordionSummaryStyles = {
   borderRadius: "8px !important",
 };
+
+export const INDIAN_RUPEE_SYMBOL = "₹";

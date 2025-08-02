@@ -1,6 +1,7 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import { colors } from "../../constants";
 import { FaChevronRight } from "react-icons/fa6";
+import { formatNumber } from "../../utils";
 
 type Props = {
   title: string;
@@ -41,7 +42,7 @@ const StatCard = ({ title, number, handleOnClick, description }: Props) => {
         </Stack>
         <Stack gap={0.5} px={2}>
           <Typography fontSize={20} fontWeight={600}>
-            {title === "Experience" ? `${number} Years` : number}
+            {title === "Experience" ? `${number} Years` : formatNumber(number)}
           </Typography>
           <Typography fontSize={11} color={colors.contentSecondary}>
             {description}

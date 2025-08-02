@@ -33,3 +33,15 @@ export const LOGIN_MUTATION = gql`
   }
   ${USER_FRAGMENT}
 `;
+
+export const ADD_COMPANY_OR_SALARY_UPDATE = gql`
+  mutation LoginUser($loginInput: LoginInput) {
+    loginUser(loginInput: $loginInput) {
+      token
+      user {
+        ...UserFields
+      }
+    }
+  }
+  ${USER_FRAGMENT}
+`;

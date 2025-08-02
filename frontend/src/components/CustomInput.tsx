@@ -4,12 +4,18 @@ import React, {
   RefCallback,
   useState,
 } from "react";
-import { Stack, TextField, TextFieldProps, Typography } from "@mui/material";
+import {
+  Stack,
+  TextField,
+  TextFieldProps,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import { InputAdornment } from "@mui/material";
 import { IconButton } from "@mui/material";
 import { InputBaseComponentProps } from "@mui/material";
 import { VisibilityOffOutlined, VisibilityOutlined } from "@mui/icons-material";
-import { colors } from "../constants";
+import { colors, screenSize } from "../constants";
 
 export type CustomInputProps = TextFieldProps & {
   styles?: CSSProperties;
@@ -45,6 +51,7 @@ const CustomInput = React.forwardRef<HTMLElement, CustomInputProps>(
     ref
   ) {
     const [showInput, setShowInput] = useState(!isProtected);
+    const isTablet = useMediaQuery(`(max-width:${screenSize.tablet})`);
 
     return (
       <Stack
@@ -64,6 +71,7 @@ const CustomInput = React.forwardRef<HTMLElement, CustomInputProps>(
                 color: colors.contentTertiary,
                 padding: 0,
                 opacity: 1,
+                fontSize: isTablet ? 14 : 16,
               },
               ...textFieldInputSx,
             },
@@ -113,7 +121,7 @@ const CustomInput = React.forwardRef<HTMLElement, CustomInputProps>(
               "data-testid": dataTestId,
             },
             sx: {
-              fontSize: "1rem",
+              fontSize: isTablet ? 14 : 16,
               padding: 0,
               borderRadius: 4,
               backgroundColor: error ? colors.lightRed : colors.grey3,
