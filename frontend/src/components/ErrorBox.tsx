@@ -1,11 +1,19 @@
 import { WarningAmberRounded } from "@mui/icons-material";
-import { List, ListItem, Stack, SxProps, Typography } from "@mui/material";
+import {
+  List,
+  ListItem,
+  Stack,
+  SxProps,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import { FieldValues, FormState } from "react-hook-form";
-import { colors } from "../constants";
+import { colors, screenSize } from "../constants";
 
 type Props = { formState: FormState<FieldValues>; style?: SxProps };
 
 const ErrorBox = ({ formState, style }: Props) => {
+  const isTablet = useMediaQuery(`(max-width:${screenSize.tablet})`);
   const hasErrors = Object.keys(formState.errors).length > 0;
 
   if (!hasErrors) {
@@ -45,7 +53,11 @@ const ErrorBox = ({ formState, style }: Props) => {
       <List sx={{ p: 0 }}>
         {uniqueErrorList.map(({ message }, index) => (
           <ListItem key={index} sx={{ p: 0 }}>
-            <Typography variant="body2" fontSize={"1rem"} component="div">
+            <Typography
+              variant="body2"
+              fontSize={isTablet ? 14 : 16}
+              component="div"
+            >
               {`- ${message}`}
             </Typography>
           </ListItem>

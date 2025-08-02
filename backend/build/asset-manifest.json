@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.4a668339.css",
-    "main.js": "/static/js/main.d1f98c56.js",
+    "main.js": "/static/js/main.735e4396.js",
     "static/media/happy-pig.png": "/static/media/happy-pig.27efc9099976a7be8ffe.png",
     "static/media/logo.png": "/static/media/logo.3b6f1e87311d0c8e669d.png",
     "index.html": "/index.html",
     "main.4a668339.css.map": "/static/css/main.4a668339.css.map",
-    "main.d1f98c56.js.map": "/static/js/main.d1f98c56.js.map"
+    "main.735e4396.js.map": "/static/js/main.735e4396.js.map"
   },
   "entrypoints": [
     "static/css/main.4a668339.css",
-    "static/js/main.d1f98c56.js"
+    "static/js/main.735e4396.js"
   ]
 }

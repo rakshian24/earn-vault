@@ -1,8 +1,14 @@
 import React, { CSSProperties, ReactNode, RefCallback } from "react";
-import { Select, SelectProps, Stack, Typography } from "@mui/material";
+import {
+  Select,
+  SelectProps,
+  Stack,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 import { MenuItem } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { colors } from "../constants";
+import { colors, screenSize } from "../constants";
 
 type Props = SelectProps & {
   styles?: CSSProperties;
@@ -27,6 +33,8 @@ const CustomSelect = React.forwardRef<HTMLElement, Props>(function CustomSelect(
   },
   ref
 ) {
+  const isTablet = useMediaQuery(`(max-width:${screenSize.tablet})`);
+
   return (
     <Stack
       sx={{
@@ -50,11 +58,14 @@ const CustomSelect = React.forwardRef<HTMLElement, Props>(function CustomSelect(
               maxWidth: 600,
               marginTop: 0.5,
               borderRadius: "16px",
+              "& .MuiMenuItem-root": {
+                fontSize: isTablet ? 14 : 16,
+              },
             },
           },
         }}
         sx={{
-          fontSize: "1rem",
+          fontSize: isTablet ? 14 : 16,
           borderRadius: 4,
           border: 0,
           backgroundColor: error ? colors.lightRed : colors.grey3,
