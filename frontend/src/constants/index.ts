@@ -30,11 +30,11 @@ export const colors = {
   black: "#2D3747",
 
   // App Pallette
-  primary: "#4261EE",
+  primary: "#4F92FF",
   primaryBg: "#EBEFFD",
   primaryBorder: "#BAE6FD",
-  skyBlue: "#4BC8F0",
-  skyBlueBg: "#EEF9FD",
+  secondary: "#4BC8F0",
+  secondaryBg: "#EEF9FD",
   blue: "#1C4ED8",
   blueBg: "#DBEAFE",
   yellow: "#FFB84D",
@@ -71,6 +71,8 @@ export const colors = {
   dangerBg: "#FEF2F2",
   dangerBorder: "#FCA5A5",
 };
+
+export const linearGradient = `linear-gradient(90deg, ${colors.primary} 0%, ${colors.secondary} 100%)`;
 
 export const ISO_DATE_FORMAT = "DD-MMM-YYYY";
 export const ISO_DATE_FORMAT2 = "YYYY-MM-DD";
