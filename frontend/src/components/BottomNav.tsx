@@ -6,7 +6,7 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 import { useNavigate, useLocation } from "react-router-dom";
 import { colors, ROUTES } from "../constants";
 import { isRunningStandalone } from "../utils";
-import { WorkOutline, WorkOutlineOutlined } from "@mui/icons-material";
+import { WorkOutline } from "@mui/icons-material";
 
 export const BottomNav = () => {
   const navigate = useNavigate();

@@ -40,12 +40,12 @@ const NoData = () => {
         />
 
         <NoDataActionCard
-          icon={<FaTimeline color={colors.skyBlue} />}
+          icon={<FaTimeline color={colors.secondary} />}
           title="Track Earnings & Benefits"
           description="Record salaries, bonuses, PF, ESOP, and all compensation details."
           buttonText="Add Earnings"
-          color={colors.skyBlue}
-          bgColor={colors.skyBlueBg}
+          color={colors.secondary}
+          bgColor={colors.secondaryBg}
         />
       </Stack>
     </Stack>

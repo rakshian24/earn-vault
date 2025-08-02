@@ -50,7 +50,9 @@ const CustomSegmentedToggle = <T extends string>({
               py: 0.8,
               minWidth: 80,
               textAlign: "center",
-              bgcolor: isSelected ? option.bgColor ?? bgColor : "transparent",
+              background: isSelected
+                ? option.bgColor ?? bgColor
+                : "transparent",
               transition: "all 0.2s ease-in-out",
               ...sx,
             }}
